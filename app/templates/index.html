@@ -4,14 +4,27 @@
 {% block content %}
 	<br>
 
-	<center>
-	<form action="/submit" id="textform" method="post">
+	<!-- <center>
+	<form class="form-group" action="/submit" id="textform" method="post">
 	    <textarea name="content" rows="4" cols="50" placeholder="Just write whatever you want to..."></textarea>
 	    <br>
 	    <input type="text" name="author" placeholder="Your name">
 	    <input type="submit" value="Post">
 	</form>
 	</center>
+
+	<br> -->
+
+	<center>
+		<form class="form-group" action="/submit" id="textform" method="post" style="margin: 0% 20% 0% 20%;">
+				<textarea name="content" class="form-control"  rows="3" placeholder="Ask question or give answer"></textarea>
+				<br>
+				<input type="text" name="author"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Author">
+				<br>
+				<button type="submit" class="btn btn-primary" value="Post">Ask/Answer</button>
+		</form>
+	</center>
+
 
 	<br>
 

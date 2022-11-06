@@ -9,7 +9,7 @@ from app import app
 
 # The node with which our application interacts, there can be multiple
 # such nodes as well.
-CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8002"
+CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 # private, public = make_keypair()
 
 posts = []
@@ -42,7 +42,7 @@ def fetch_posts():
 def index():
     fetch_posts()
     return render_template('index.html',
-                           title='Demo Application '
+                           title='Exam Portal '
                                  'Blockchain',
                            posts=posts,
                            node_address=CONNECTED_NODE_ADDRESS,
